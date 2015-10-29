@@ -2,6 +2,7 @@
 doctype html
 html
 	head
+		meta(charset="utf-8")
 		title Barbershop
 		link(rel="stylesheet", href="css/common.css")
 	body
@@ -43,9 +44,37 @@ html
 					section.news-block
 						h2.section-header Новости
 						section.news-block__item
-							p.news-block__item-text
-							p.news-block__item-date
+							p.news-block__descr
+							p.news-block__date
 						section.news-block__item
-							p.news-block__item-text
-							p.news-block__item-date
+							p.news-block__descr
+							p.news-block__date
+					section.slide-block
+						h2.section-header Фотогалерея
+						div.slide-block__img
+						button.slide-block__prev-btn
+						button.slide-block__next-btn
+				section.s-center-block
+					section.contacts-block
+						h2.section-header Контактная информация
+						p.contacts-block__txt
+							| Barbershop "Borodinski" <br>
+							| Адрес: г. Москва, ул. Собаки Павлова, д. 13 <br>
+							| Телефон: +7 (495) 666-02-666<br>
+							<br>
+							| Время работы: <br>
+							| пн — пт: с 10:00 до 22:00 <br>
+							| сб — вс: с 10:00 до 19:00
+					section.check-in-block
+						h2.section-header Записаться
+						p.check-in-block__descr
+							| Укажте желаемую дату и время, и мы свяжемся с вами для подтверждения брони
+						form.check-in-block__form(action="" method="post")
+							input(type="text")
+							input(type="text")
+							input(type="text")
+							input(type="text")
+							input(type="submit")
+
+
 
