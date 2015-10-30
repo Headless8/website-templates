@@ -1,0 +1,49 @@
+// Created by Artyom Kravchenko, 2015 
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title Website templates
+		link(rel="stylesheet" href="page-css/common.css")
+	body
+		// begin s-main-header
+		header.s-main-header.s-main-header_radius.lay-main-header
+			h1.main-header__h Website Templates' Layouts
+		// end s-main-header 
+		
+		// begin s-main-content 
+		div.s-main-content.lay-main-content
+				section.about
+					p
+						span.about__greetings
+							| Hey! This is <em>test</em> repo's navigation page.
+						<br>
+						span.about__info
+							| Below you can see the list of websites that are in the repository.
+						<br>
+						span.about__offer
+							| Click and visit every templates' page!
+						<br>
+						span.about__note
+							| Note that here are pages that are not ready yet and now stay in progress.
+				section.websites-catalog
+					ul.website-catalog__list
+						li.website-catalog__item
+							a.website-catalog__link(href="001/dest/index.html") Barbershop
+								img.website-catalog__img(src="001/dev/img/index.jpg" width="95%")
+						li.website-catalog__item
+							a.website-catalog__link(href="001/dest/index.html") Barbershop
+								img.website-catalog__img(src="001/dev/img/index.jpg" width="95%")
+						li.website-catalog__item
+							a.website-catalog__link(href="001/dest/index.html") Barbershop
+								img.website-catalog__img(src="001/dev/img/index.jpg" width="95%")
+		// end s-main-content 
+
+		// begin s-main-footer 
+		footer.s-main-footer.s-main-footer_radius.lay-main-footer
+			section.copy
+				p
+					| Copyright
+					| 2015 
+					a.copy__author-link(href="http://github.com/oopscurity") Artyom Kravchenko
+		// end s-main-footer 
