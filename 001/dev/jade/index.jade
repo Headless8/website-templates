@@ -7,79 +7,98 @@ html
 		link(rel="stylesheet", href="css/common.css")
 	body
 		// begin s-main-header
-		header.s-main-header
-			div.layout-main-wrapper
-				// begin header-menu
-				nav.header-menu
-					ul.header-menu-list
-						li.header-menu__item
-							a.header-menu__link(href="") Главная
-						li.header-menu__item
-							a.header-menu__link(href="") Информация
-						li.header-menu__item
-							a.header-menu__link(href="") Новости
-						li.header-menu__item
-							a.header-menu__link(href="") Прайс-лист
-						li.header-menu__item
-							a.header-menu__link(href="") Магазин
-						li.header-menu__item
-							a.header-menu__link(href="") Контакты
+		header.s-m-header.lay-m-header
+			// begin header-menu
+			nav.m-header-menu
+				ul.m-header-menu__list
+					li.m-header-menu__item
+						a.m-header-menu__link(href="") Главная
+					li.m-header-menu__item
+						a.m-header-menu__link(href="") Информация
+					li.m-header-menu__item
+						a.m-header-menu__link(href="") Новости
+					li.m-header-menu__item
+						a.m-header-menu__link(href="") Прайс-лист
+					li.m-header-menu__item
+						a.m-header-menu__link(href="") Магазин
+					li.m-header-menu__item
+						a.m-header-menu__link(href="") Контакты
 				// end header-menu
+
 				// begin user-block
 				div.user-block
-					a.user-block__log-in
+					a.user-block__log-in Вход
 				// end user-block
-		article.main-content
-			div.layout-main-wrapper
-				div.logo
-				section.feature-block
-					section.feature-block__item
-						h3.feature-block-header Быстро
-						p.feature-block-descripion.
-							Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
-					section.feature-block__item
-						h3.feature-block-header Круто
-						p.feature-block-descripion.
-							Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!
-					section.feature-block__item
-						h3.feature-block-header Дорого
-						p.feature-block-descripion.
-							Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
-				section.s-center-block
-					section.news-block
-						h2.section-header Новости
-						section.news-block__item
-							p.news-block__descr
-							p.news-block__date
-						section.news-block__item
-							p.news-block__descr
-							p.news-block__date
-					section.slide-block
-						h2.section-header Фотогалерея
-						div.slide-block__img
-						button.slide-block__prev-btn
-						button.slide-block__next-btn
-				section.s-center-block
-					section.contacts-block
-						h2.section-header Контактная информация
-						p.contacts-block__txt
-							| Barbershop "Borodinski" <br>
-							| Адрес: г. Москва, ул. Собаки Павлова, д. 13 <br>
-							| Телефон: +7 (495) 666-02-666<br>
-							<br>
-							| Время работы: <br>
-							| пн — пт: с 10:00 до 22:00 <br>
-							| сб — вс: с 10:00 до 19:00
-					section.check-in-block
-						h2.section-header Записаться
-						p.check-in-block__descr
-							| Укажте желаемую дату и время, и мы свяжемся с вами для подтверждения брони
-						form.check-in-block__form(action="" method="post")
-							input(type="text")
-							input(type="text")
-							input(type="text")
-							input(type="text")
-							input(type="submit")
-
+		article.m-content.lay-m-content
+			div.logo
+			section.feature-block
+				section.feature-block__item
+					h3.feature-block-header Быстро
+					p.feature-block-descripion.
+						Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+				section.feature-block__item
+					h3.feature-block-header Круто
+					p.feature-block-descripion.
+						Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!
+				section.feature-block__item
+					h3.feature-block-header Дорого
+					p.feature-block-descripion.
+						Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+			section.s-center-block
+				section.news-block
+					h2.section-header Новости
+					section.news-block__item
+						p.news-block__descr
+							| Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+						p.news-block__date
+							| 25 сентября
+					section.news-block__item
+						p.news-block__descr
+							| В нашеей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград,пополнил наши стройные ряды
+						p.news-block__date
+							| 19 сентября
+					a.news-block__to-all(href="") Все новости
+				section.slide-block
+					h2.section-header Фотогалерея
+					div.slide-block__img
+					button.slide-block__prev-btn Назад
+					button.slide-block__next-btn Вперед
+			section.s-center-block
+				section.contacts-block
+				h2.section-header Контактная информация
+					p.contacts-block__txt
+						| Barbershop "Borodinski" <br>
+						| Адрес: г. Москва, ул. Собаки Павлова, д. 13 <br>
+						| Телефон: +7 (495) 666-02-666<br>
+						<br>
+						| Время работы: <br>
+						| пн — пт: с 10:00 до 22:00 <br>
+						| сб — вс: с 10:00 до 19:00
+				section.check-in-block
+					h2.section-header Записаться
+					p.check-in-block__descr
+						| Укажте желаемую дату и время, и мы свяжемся с вами для подтверждения брони
+					form.check-in-block__form(action="" method="post")
+						input.check-in-block__field(type="text" placeholder="Дата")
+						input.check-in-block__field(type="text" placeholder="Время")
+						input.check-in-block__field(type="text" placeholder="Ваше имя")
+						input.check-in-block__field(type="text" placeholder="Телефон")
+						input.check-in-block__field(type="submit" placeholder="Отправить")
+		footer.s-m-footer.lay-m-footer
+			section.address
+				p
+					| Barbershop "Borodinski" <br>
+					| Адрес: г. Москва, ул. Собаки Павлова, д. 13 <br>
+					| Телефон: +7 (495) 666-02-666
+			section.social-btns
+				p
+					| Давайте дружить!
+				a.social-btns__item.social-btns__item_vk
+				a.social-btns__item.social-btns__item_fb
+				a.social-btns__item.social-btns__item_inst
+			section.footer-copy
+				p
+					| Дизайн сайта:
+				a.footer_copy__link(href="") Glukhanko.ru
 
 
