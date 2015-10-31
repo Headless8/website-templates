@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 				tasks: ['newer:stylus'],
 			},
 			imagemin: {
-				files: ['dev/img/.{jpg, png, gif}'],
+				files: ['dev/img/*.{jpg, png, gif}'],
 				tasks: ['newer:imagemin'],
 			}
 		}

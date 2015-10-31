@@ -1,2 +1,2 @@
 /* Created by Artyom Kravchenko, 2015 */
-body{font:15px Helvetica,Arial,sans-serif;background-color:#cfc}
+body{font-family:"PT Sans Narrow",sans-serif;font-size:14px;background:#000 url("../img/background.jpg") no-repeat}.s-m-header{color:#fff;background-color:#000}.s-m-header:after{display:block;clear:both;content:""}.lay-m-header{margin:0 auto;width:50%}.m-header-menu{float:left}.m-header-menu__list,.m-header-menu__item{display:inline-block;padding:20px 5px;height:70px}.m-header-menu__link{display:block;width:100%;height:100%;color:#fff;text-decoration:none}.m-header-menu__link::after,.user-block{float:right}.s-m-content{background-color:#fefbf8}.lay-m-content{margin:0 auto;width:50%}.s-m-footer{background-color:#202020}.lay-m-footer{margin:0 auto;width:50%}
