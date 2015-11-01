@@ -1,15 +1,14 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		banner: '/* Created by Artyom Kravchenko, <%= grunt.template.today("yyyy") %> */\n',
+		pkg: grunt.file.readJSON('package.json'),
+		banner: '/* Created by <%= pkg.author %>, <%= grunt.template.today("yyyy") %> */\n',
 		jade: {
-			compile: {
-				files: [{
-					cwd: 'dev/jade/',
-					src: ['*.jade', '!particials*.jade'],
-					dest: 'dest',
-					expand: true,
-					ext: '.html',
-				}]
+			files: {
+				expand: true,
+				cwd: 'dev/jade/',
+				src: ['*.jade'],
+				dest: 'dest',
+				ext: '.html',
 			},
 			options: {
 				pretty: true,
@@ -55,12 +54,24 @@ module.exports = function(grunt) {
 				}
  			}
 		},
+		newer: {
+			options: {
+				override: function(detail, include) {
+					if (detail.task === 'jade') {
+          				return include(true);
+        			} else {
+						return include(false);
+					}
+				}
+			}
+		},
 		watch: {
 			options: {
+				spawn: false,
 				livereload: true,
 			},
 			jade: {
-				files: ['dev/jade/*.jade'],
+				files: ['dev/jade/*.jade', 'dev/jade/templates/*.jade'],
 				tasks: ['newer:jade'],
 			},
 			stylus: {
@@ -73,13 +84,8 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-jade');
-	grunt.loadNpmTasks('grunt-contrib-stylus');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-newer');
+
+	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', [
 		'connect',
