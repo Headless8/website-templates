@@ -7,11 +7,38 @@ body
 	line-height 24px
 	font-weight 700
 	text-transform uppercase
-	background black url("../img/background.jpg") no-repeat center top
+	background url("../img/tint.png") no-repeat center top, url("../img/bg-grad.png") no-repeat center 800px, #000 url("../img/background.jpg") no-repeat center top
 	min-width 960px
 	
+.g-btn
+	margin 0
+	padding 0
+	display inline-block
+	padding 10px 33px
+	//margin-right 16px
+	border 0
+	vertical-align top
+	text-align center
+	font-size 14px
+	line-height 24px
+	text-decoration none
+	text-transform uppercase
+	color #fff
+	background-color #000
+	
+	outline none
+	cursor pointer
+	
+.g-btn:hover
+	background-color #663d15
+	
+.g-btn:active
+	background-color #663d15
+
+
 // begin s-main-header
 .s-m-header
+	margin-bottom 60px
 	color white
 	background-color black
 
@@ -22,58 +49,360 @@ body
 	
 .lay-m-header
 	margin 0 auto
+	padding 0 10px
 	width layersWidth
 
 .m-header-menu
 	float left
+	width 780px
 
 .m-header-menu__list
-	padding-left (151px - 21px)
+	margin 0
+	padding 0
+	font-size 0
 
 .m-header-menu__item
 	display inline-block
-	box-sizing border-box
-	margin-right 42px
-	padding 29px 21px
-	height 64px
+	vertical-align top
 	
 	font-size 16px
-	line-height 42.33px
+	line-height 20px
+
+mHeaderMenu_LinkPaddingX = 20px
 
 .m-header-menu__link
 	display block
+	padding 25px mHeaderMenu_LinkPaddingX
 	position relative
-	
-	width 100%
-	height 100%
 	color white
 	text-decoration none
-	
-.m-header-menu__link::after
+
+.m-header-menu__link:hover
+	background #242424
+
+.m-header-menu__link_active:after,
+.m-header-menu__link_active::after
+	content ""
 	display block
 	position absolute
-	height 4px
+	bottom 0
+	left mHeaderMenu_LinkPaddingX
+	right mHeaderMenu_LinkPaddingX
+	height 5px
 	background-color white
 	
 .user-block
 	float right
+	max-width 140px
+	
+.user-block__log-in
+	display block
+	position relative
+	padding 25px 20px
+	padding-left 50px
+	
+	font-size 16px
+	line-height 20px
+	color white
+	text-decoration none
+	
+.user-block__log-in:hover
+	background #242424
+
+.user-block__log-in:before,
+.user-block__log-in::before
+	content ""
+	display block
+	position absolute
+	top 28px
+	left 20px
+	
+	width 18px
+	height 18px
+
+	background url("../img/ico-login.png") no-repeat
+	//background-position 0
+	opacity 0.3
+	
+.user-block__log-in:hover:before,
+.user-block__log-in:hover::before
+	opacity 1
+
 // end s-main-header
 
 // begin s-main-content
 .s-m-content
 	color black
-	background-color #fefbf8
+
+.s-m-content:after,
+.s-m-content::after
+	content ""
+	display block
+	clear both
 
 .lay-m-content
 	margin 0 auto
 	width layersWidth
+	
+.s-center-block
+	padding-top 50px
+	padding-bottom 55px
+	padding-left 80px
+	padding-right 80px
+	margin-bottom 35px
+	background #fefbf8 url("../img/texture-s-center-block.jpg") repeat
+	
+.s-center-block:after,
+.s-center-block::after
+	content ""
+	display block
+	clear both
+
+.s-center-block_no-padding
+	padding 0px
+
+.s-center-block_bottom_no-left-right
+	padding-left 0px
+	padding-right 0px
+
+.s-center-block_bottom
+	padding-bottom 0px
+
+.s-center-block_top
+	padding-top 0px
+	
+.s-center-block_transparent
+	background transparent
+	color white
+	
+.s-center-block_left
+	width 350px
+	float left
+	//padding-left 80px
+
+.s-center-block_right
+	width 300px
+	float right
+	//padding-right 80px
+	
+.s-center-block_split
+	background url("../img/splitter.png") no-repeat center, #fefbf8 url("../img/texture-s-center-block.jpg") repeat
+.logo
+	margin 0 auto
+	width 368px
+	height 204px
+
+.features-block
+	margin-top 30px
+	margin-bottom 85px
+	font-size 0
+
+.features-block__item
+	margin-right 20px
+	display inline-block
+	width 300px
+	
+
+	font-size 14px
+	vertical-align top
+	text-align center
+	
+.features-block__item:last-child
+	margin-right 0
+
+.features-block__header
+	position relative
+	height 75px
+	font-size 30px
+
+.features-block__header:after,
+.features-block__header::after
+	content ""
+	display block
+	position absolute
+	bottom 0
+	left 50%
+	margin-left -10px
+	transform rotate(45deg)
+
+	width 20px
+	height 20px
+	background-color white
+	
+.features-block__description
+	margin 10px
+	
+.section-header
+	margin 0px
+	margin-bottom 36px
+	padding 0px
+	font-size 30px
+	line-height 42.33px
+	font-weight 700
+
+.news-block__list
+	margin 0
+	padding 0
+	list-style none
+	
+.news-block__item
+	margin-bottom 25px
+
+.news-block__descr
+	margin-bottom 0px
+	
+.news-block__time
+	margin-top 0px
+	font-weight 400
+	
+.slide-block
+	position relative
+	width 300px
+	height (260px + 40px + 38px)
+
+.slide-block__img-wrap
+	margin 0
+	border 7px solid #fff
+	width 286px
+	height 164px
+	
+.slide-block__btn
+	position absolute
+	bottom 0px
+	width 140px
+
+.slide-block__btn:disabled
+	opacity 0.5
+	cursor default
+
+.slide-block__btn_prev
+	left 0px
+
+.slide-block__btn_next
+	right 0px
+	
+.contacts-block
+	position relative
+
+.contacts-block__contacts
+	margin 30px 0px
+
+.contacts-block__shedule
+	margin-bottom 90px
+
+.contacts-block__howtogo
+	position absolute
+	bottom 0px
+	left 0px
+
+.contacts-block__feedback
+	position absolute
+	bottom 0px
+	right 0px
+
+.check-in-block__field
+	float left
+	margin-right 20px
+	margin-bottom 20px
+	padding 10px 15px
+	width 106px
+	border 2px solid #000
+	
+	font-size 14px
+	line-height 24px
+	font-family "PT Sans Narrow", sans-serif
+	font-weight 700
+	text-transform uppercase
+	outline none
+	background #f9f6f3
+	color #000
+
+.check-in-block__field:nth-child(even)
+	margin-right 0
+
+.check-in-block__field:focus,
+.check-in-block__field:hover
+	border-color #663d15
+
+.check-in-block__submit
+	clear both
+	width 100%
 // end s-main-content
 
 // begin s-main-footer
 .s-m-footer
+	margin-top 60px
+	padding-top 55px
+	padding-bottom 40px
 	background-color #202020
+	background url("../img/texture-footer.jpg")
+	
+.s-m-footer:after,
+.s-m-footer::after
+	content ""
+	display block
+	clear both
 
 .lay-m-footer
 	margin 0 auto
 	width layersWidth
+
+.address
+	float left
+	width 300px
+	margin-right 100px
+
+.address__text
+	margin 0px
+	padding 0px
+
+.social
+	float left
+	text-align center
+
+.social__call
+	margin 0
+	margin-bottom 5px
+
+.social__item
+	display inline-block
+	vertical-align top
+	margin-right 6px
+	width 42px
+	height 42px
+	background #000 url("../img/social-sprites.png") no-repeat
+	
+.social__item:hover,
+.social__item:active
+	background-color #fff
+
+.social__item_vk
+	background-position 0 -42px
+	
+.social__item_vk:hover,
+.social__item_vk:active
+	background-position -42px -42px
+	
+.social__item_fb
+	background-position 0 0
+	
+.social__item_fb:hover,
+.social__item_fb:active
+	background-position -42px 0
+	
+.social__item_inst
+	background-position 0 -84px
+	
+.social__item_inst:hover,
+.social__item_inst:active
+	background-position -42px -84px
+	
+.copy
+	float right
+	max-width 320px
+	
+.copy__descr
+	margin 0
+	margin-bottom 5px
+	text-align center
 // end s-main-footer

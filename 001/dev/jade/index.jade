@@ -13,17 +13,17 @@ block main-header
 block main-content
 
 	article.s-m-content.lay-m-content
-		div
-			div.logo
+		section.s-center-block.s-center-block_no-padding.s-center-block_transparent
+			include ./templates/logo
 			include ./templates/features-block
 			
-			section.s-center-block
-				include ./templates/news-block
-				include ./templates/slide-block
+		section.s-center-block.s-center-block_split
+			include ./templates/news-block
+			include ./templates/slide-block
 
-			section.s-center-block
-				include ./templates/contacts-block
-				include ./templates/check-in-block
+		section.s-center-block.s-center-block_split
+			include ./templates/contacts-block
+			include ./templates/check-in-block
 
 block main-footer
 

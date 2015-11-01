@@ -80,7 +80,7 @@ module.exports = function(grunt) {
 			},
 			imagemin: {
 				files: ['dev/img/*.{jpg, png, gif}'],
-				tasks: ['newer:imagemin'],
+				tasks: ['imagemin'],
 			}
 		}
 	});
