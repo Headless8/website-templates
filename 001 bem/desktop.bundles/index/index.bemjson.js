@@ -36,11 +36,133 @@
 				{
 					elem: 'section',
 					elemMods: { bg: 'transparent' },
-					content: ''
+					content: [
+						{
+							block: 'logo',
+							mix: { block: 'content', elem: 'logo'},
+							content: {
+								block: 'image',
+								url: ''
+							}
+						},
+						{
+							block: 'promo',
+							mix: { block: 'content', elem: 'promo'},
+							content: [
+								{
+									elem: 'item',
+									content: [
+										{
+											block: 'title', 
+											mix: { block: 'promo', elem: 'losung' },
+											content: 'Быстро'
+										},
+										{
+											block: 'text',
+											mix: { block: 'promo', elem: 'description' },
+											content: ''
+										}
+									]
+								},
+								{
+									elem: 'item',
+									content: [
+										{
+											block: 'title', 
+											mix: { block: 'promo', elem: 'losung' },
+											content: 'Круто'
+										},
+										{
+											block: 'text',
+											mix: { block: 'promo', elem: 'description' },
+											content: ''
+										}
+									]
+								},
+								{
+									elem: 'item',
+									content: [
+										{
+											block: 'title', 
+											mix: { block: 'promo', elem: 'losung' },
+											content: 'Дорого'
+										},
+										{
+											block: 'text',
+											mix: { block: 'promo', elem: 'description' },
+											content: ''
+										}
+									]
+								}
+							]
+						}
+					]
 				},
 				{
 					elem: 'section',
-					content: ''
+					content: [
+						{
+							elem: 'side',
+							elemMods: { align: 'left' },
+							content: {
+								block: 'news',
+								content: [
+									{
+										block: 'title',
+										mix: { block: 'content', elem: 'section-title' },
+										content: 'Новости'
+									},
+									{
+										elem: 'list',
+										content: [
+											{
+												elem: 'item',
+												content: [
+													{
+														block: 'text',
+														mix: { block: 'news', elem: 'description' },
+														content: ''
+													},
+													{
+														elem: 'date',
+														content: ''
+													}
+												]
+											},
+											{
+												elem: 'item',
+												content: [
+													{
+														block: 'text',
+														mix: { block: 'news', elem: 'description' },
+														content: ''
+													},
+													{
+														elem: 'date',
+														content: ''
+													}
+												]
+											}
+										]
+									},
+									{
+										block: 'button',
+										mix: { block: 'news', elem: 'button' },
+										mods: { type: 'link' },
+										text: 'Все новости'
+									}
+								]
+							}
+						},
+						{
+							elem: 'side',
+							elemMods: { align: 'right' },
+							content: {
+								block: 'slide',
+								content: ''
+							}
+						}
+					]
 				},
 				{
 					elem: 'section',
@@ -52,19 +174,31 @@
 			block: 'footer',
 			content: [
 				{
-					block: 'address',
-					mix: { block: 'footer', elem: 'address' },
-					content: ''
+					elem: 'item',
+					elemMods: { align: 'left' },
+					content: {
+						block: 'address',
+						mix: { block: 'footer', elem: 'address' },
+						content: ''
+					}
 				},
 				{
-					block: 'social',
-					mix: { block: 'footer', elem: 'social' },
-					content: ''
+					elem: 'item',
+					elemMods: { align: 'conter' },
+					content: {
+						block: 'social',
+						mix: { block: 'footer', elem: 'social' },
+						content: ''
+					}
 				},
 				{
-					block: 'copyright',
-					mix: { block: 'footer', elem: 'copyright' },
-					content: ''
+					elem: 'item',
+					elemMods: { align: 'right' },
+					content: {
+						block: 'copyright',
+						mix: { block: 'footer', elem: 'copyright' },
+						content: ''
+					}
 				}
 			]
 		}
