@@ -1,0 +1,496 @@
+html{
+font-size: 100%;	
+}
+
+/* FONT 
+
+@font-face {
+    font-family: Marta; /* Имя шрифта */
+   /* src: url(../fonts/Marta.otf); /* Путь к файлу со шрифтом */
+
+/* }
+
+*/
+ /* BODY */
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, fieldset, table, thead, tfoot, tbody, tr, th, td, form, img, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, video {
+  margin: 0;
+  padding: 0; 
+  /*font-family: cHoDyvRa;  Имя шрифта */
+}
+
+
+body{
+	min-width: 1100px;	
+	background: url(../../img/economy_page/bg.jpg) repeat;
+	color: #fff;
+
+	font-family: 'Marta';
+	font-style: italic;
+}
+select { 
+
+	outline: none; 
+}
+
+
+.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+/* TOP .*/
+.top{
+	width: calc(100%-10px);
+	height:158px;
+	border: 5px ;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+
+	background: url(../../img/economy_page/wood.jpg) repeat;
+/*
+-moz-border-image: url(../../img/top_border.jpg) 80% 80% 80% 80% repeat;
+-webkit-border-image: url(../../img/top_border.jpg) 80% 80% 80% 80% repeat; 
+-o-border-image: url(../../img/top_border.jpg) 80% 80% 80% 80% repeat;
+border-image: url(../../img/top_border.jpg) 2 0 0 0 repeat; */
+
+}
+.top_border_top, .top_border_buttom {
+	width: 100%;
+	margin: auto;
+	height: 5px;
+	background: url(../../img/economy_page/top_border.jpg) repeat;
+}
+.top_border_buttom{
+	width: 90%;
+}
+.top_button{
+	padding:0.5% 0 0 0;
+	width: 99%;
+	margin: auto;
+	
+}
+.top_button_1, .top_button_2, .top_button_3, .top_button_4, .top_button_5, .top_button_6, .top_button_7, .top_button_8, .top_button_9, .top_button_10, .top_button_11, .top_button_12{
+	width:63px;
+	height: 63px;
+	background: url(../../img/economy_page/button.png) no-repeat;
+	background-size:  778px 63px;
+	float:left;
+	margin-right:0.2%;
+	cursor:pointer;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+
+	    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.top_button_1:hover, .top_button_2:hover, .top_button_3:hover, .top_button_4:hover, .top_button_5:hover, .top_button_6:hover, .top_button_7:hover, .top_button_8:hover, .top_button_9:hover, .top_button_10:hover, .top_button_11:hover, .top_button_12:hover{
+ /*-webkit-filter: sepia(100%); */
+
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: inset 0 -10px 10px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: inset 0 -10px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 -10px 10px rgba(255, 255, 255, 0.5);
+}
+.top_button_2{
+	
+	background-position: -65px 0px;
+}
+.top_button_3{
+	background-position: -130px 0px;
+}
+.top_button_4{
+	background-position: -195px 0px;
+}
+.top_button_5{
+	background-position: -261px 0px;
+}
+.top_button_6{
+	background-position: -326px 0px;
+}
+.top_button_7{
+	background-position: -391px 0px;
+}
+.top_button_8{
+	background-position: -457px 0px;
+}
+
+
+.top_button_9{
+	float:right;
+	background-position: -521px 0px;
+}
+.top_button_10{
+	float:right;
+	background-position: -587px 0px;
+}
+.top_button_11{
+	float:right;
+	background-position: -651px 0px;
+}
+.top_button_12{
+	float:right;
+	background-position: -716px 0px;
+}
+.title_econimy_div{
+	margin: 2% auto;
+	width: 75%;
+	
+}
+
+
+.title_econimy{
+	
+width: calc(100% - 75px);
+	
+padding: 0.2% 0 0.2% 0;
+
+border-left: 0;
+border-right: 0;	
+background: url(../../img/economy_page/bg_2.png) repeat;
+	
+-moz-border-image: url(../../img/economy_page/top_border.jpg) 20% 0 20% 0 repeat;
+	
+-webkit-border-image: url(../../img/economy_page/top_border.jpg) 20% 0 20% 0 repeat;
+	
+-o-border-image: url(../../img/economy_page/top_border.jpg) 20% 0 20% 0 repeat;
+	
+border-image: url(../../img/economy_page/top_border.jpg) 90% 0 90% 0 repeat;
+	
+text-align: center;
+	
+color: #877e6b;
+	
+text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.83);
+	
+float: left;
+}
+.fenichka_1, .fenichka_2{
+	width: 31px;
+	height: 32px;
+	background: url(../../img/economy_page/fenichka.png) no-repeat;
+	background-size:  63px 32px;
+	float:left;
+}
+.fenichka_2{
+	background-position: -32px 0px;
+}
+.hz{
+	margin:-60px 1px 0 1px;
+	width: 86px;
+	height: 86px;
+	background: url(../../img/economy_page/hz.png) no-repeat;
+	
+}
+
+/* MENU .*/
+
+.menu{
+	padding:1.5% 0 2% 0;
+	width: 1060px;
+	margin: auto;
+	
+	
+
+}
+.menu_button{
+	width: 211px;
+	height: 31px;
+	background: url(../../img/economy_page/button_menu.png) repeat;
+	background-position:  0px -2px;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+	line-height: 32px;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.85);
+
+}
+.menu_button:hover{
+	background-position:  0px -33px;
+	color: #231f20;
+	text-shadow: none;
+}
+
+/* CONTENT .*/
+
+.content{
+	width: 95%;
+	background: url(../../img/economy_page/wood.jpg) repeat;
+	border: 1px solid #222;
+	margin: 0 auto 1.5% auto;
+	
+
+}
+.content_top{
+	
+	width: 98%;
+	margin: auto;
+	margin-top: 1%;
+	
+}
+.content_left{
+	width: 362px;
+	padding: 0.5%;
+	float: left;
+	background: url(../../img/economy_page/bg_3.png) repeat;
+	border-radius: 0 0 10px 10px;
+}
+.content_right{
+	width: 505px;
+	padding: 5px 10px 5px 2px;
+	float: right;
+	background: url(../../img/economy_page/bg_3.png) repeat;
+	border-radius: 0 0 10px 10px;
+}
+.content_top_title, .content_top_title_2{
+	margin-left: 2%;
+	padding: 5px 20px 5px 20px;
+	
+	text-align: center;
+	background: url(../../img/economy_page/bg_2.png) repeat;
+	border-radius: 5px;
+	 box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.85);
+}
+.content_top_title_2{
+	width:130px;
+	padding: 5px ;		
+	
+}
+
+.content_top_title_2 select{
+	height: 22px;
+	width: 100%;
+	background: #d1d3d4;
+	font-family: 'Marta';
+
+
+	/*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+
+  background-image: url('../../img/economy_page/resource-panel-label-bg.png');
+  background-position: right center;
+background-repeat: no-repeat;
+}
+.content_top_title_2 option:hover{
+background: #d1d3d4;
+}
+/* CONTENT TABLE .*/
+.table_border{
+	width: 97%;
+	margin: 2% auto 2% auto;
+	border: 1px solid #fff;
+	
+}
+.content_table{
+ width: 105.6%;
+
+
+ border:4px;
+/*border-image: url(../../img/table_border.jpg)  25% round round;*/
+ margin:  auto;
+ margin:-7% -4% -7% -3%;
+
+}
+.table_border_top, .table_border_button{
+	
+	 width: 100%;
+	
+	height: 7px;
+	background: url(../../img/economy_page/table_border.jpg) repeat;
+}
+.table_border_button{
+	width: 100%;
+	background: url(../../img/economy_page/table_border_button.jpg) repeat;
+	
+}
+.table_border_left, .table_border_right{
+	width: 7px;
+	height: 240px;
+	background: url(../../img/economy_page/table_border_left.jpg) repeat;
+	 
+}
+.table_border_right{
+	height: 240px;
+	width: 13px;
+	background: url(../../img/economy_page/tabel_bg_right.png) repeat;
+}
+.table_border_left_top{
+	width: 47px;
+	height: 48px;
+	background: url(../../img/economy_page/tabel_bg_top_right.png) no-repeat;	
+}
+.table_border_left_button{
+	width: 47px;
+	height: 48px;
+	background: url(../../img/economy_page/tabel_bg_button_left.png) no-repeat;	
+}
+.tabel_bg_button_right{
+	
+	width: 47px;
+	height: 48px;
+	background: url(../../img/economy_page/tabel_bg_button_right.png) no-repeat;
+}
+.tabel_bg_top_right{
+	width: 47px;
+	height: 48px;
+	background: url(../../img/economy_page/tabel_bg_top_leftt.png) no-repeat;
+}
+
+/* TABLE .*/
+.table_1{	
+	margin:auto;
+}
+.caunt{
+	color:#ffe6bf;
+}
+.table_2{
+	
+	width:98%;
+	margin:auto;
+	/* border-collapse: collapse;	*/
+}
+.content_table{
+	border: 1px solid #33271c;
+}
+.table_1{
+	width: 100%;
+	
+	/*border-image: url(../../img/top_border.jpg) 1 repeat; */
+	
+	border-collapse: collapse; 
+	border-spacing: 5px;
+}
+.content_table  table{
+	background: url(../../img/economy_page/bg_table.png) repeat;
+	box-shadow: inset 1px 1px 10px rgba(0,0,0,0.95);
+}
+.table_1  tr:first-child{
+	border: 0;
+	padding: 10%;
+	background: url(../../img/economy_page/bg_3.png) repeat;
+}
+
+/*
+
+.content_table  tr:first-child:hover{
+	background: url(../../img/bg_3.png) repeat;
+}
+.content_table tr:hover{
+	background: url(../../img/bg_2.png) repeat;
+}
+.tr_select {}
+
+.content_table tr {
+	background: url(../../img/bg_2.png) repeat;
+}
+.content_table td{
+	padding: 0.5%;
+	text-align: center;
+	border-right: 4px solid #ccc;
+
+	border-image: url(../../img/top_border.jpg) 0 99% 0 0 repeat;
+	color:#c2b59b;
+}
+ */
+
+.table_title{
+	margin: 2%;
+	padding: 5px 15px 5px 15px;
+	
+	text-align: center;
+	background: url(../../img/economy_page/bg_2.png) repeat;
+	border-radius: 5px;
+	 box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.95);
+}
+
+
+.table_contener{
+ 	/* overflow-y:scroll; */
+ 	height: 240px;
+ 	border: 3px solid ;
+ 	/* border-right: 0; */
+ 	border-image: url(../../img/economy_page/top_border.jpg) 2 repeat;
+}
+.table_contener_skroll{
+	width: 31px;
+	height: 100px;
+	background: url(../../img/economy_page/skroll_bg.jpg) repeat;
+	float: right;
+}
+.table_3 {
+	width: 100%;
+	border-collapse:collapse;
+
+	border-spacing:0;
+	
+}
+.table_3 tbody{
+	background: url(../../img/economy_page/bg_table.png) repeat;
+}
+.table_3 tr{
+	border-top: 4px solid rgba(209,211,212,0.07);;
+	background: url(../../img/economy_page/bg_2.png) repeat;
+}
+
+
+.table_3 td{
+	padding: 0.5%;
+	text-align: center;
+	border-right: 4px solid #989999;
+	border-image: url(../../img/economy_page/top_border.jpg) 0 99% 0 0 repeat;
+	color:#c2b59b;
+}
+
+
+
+
+/* FOOTER .*/
+
+.footer{
+
+
+}
+
+/* MEDIA .*/
+
+@media only screen and (max-width: 1500px) {
+	.content_table{
+ 	width: 103.8%;
+
+
+	margin:-7% -1% -7% -2%;
+
+	}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+
+ @media only screen and (max-width: 500px) {
+
+
+}

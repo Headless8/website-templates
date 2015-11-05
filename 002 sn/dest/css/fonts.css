@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Marta';
+	src:url('../fonts/Marta.eot@#iefix') format('embedded-opentype'),  
+		url('../fonts/Marta.otf')  format('opentype'),
+	    url('../fonts/Marta.woff') format('woff'), 
+	    url('../fonts/Marta.ttf')  format('truetype'), 
+	    url('../fonts/Marta.svg#Marta') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Marta';
+	src:url('../fonts/Marta-Italic.eot@#iefix') format('embedded-opentype'),  
+		url('../fonts/Marta-Italic.otf')  format('opentype'),
+	    url('../fonts/Marta-Italic.woff') format('woff'), 
+	    url('../fonts/Marta-Italic.ttf')  format('truetype'), 
+	    url('../fonts/Marta-Italic.svg#Marta-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
