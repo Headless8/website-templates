@@ -1,0 +1,9 @@
+block('content').elem('section').content()(function() {
+	return [
+		{
+			elem: 'layer',
+			mix: [ { block: 'layer' }, { block: 'clearfix' } ],
+			content: this.ctx.content
+		}
+	];
+})
