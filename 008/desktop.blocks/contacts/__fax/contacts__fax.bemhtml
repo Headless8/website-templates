@@ -1,0 +1,7 @@
+block('contacts').elem('fax').content()(
+	function() {
+		return [
+			'f. ', this.ctx.content
+		]
+	}
+)

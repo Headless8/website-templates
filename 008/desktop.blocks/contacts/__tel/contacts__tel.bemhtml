@@ -1,0 +1,7 @@
+block('contacts').elem('tel').content()(
+	function() {
+		return [
+			't. ', this.ctx.content
+		]
+	}
+)

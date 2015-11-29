@@ -1,0 +1,13 @@
+block('project')(
+	tag()('li'),
+	
+	content()(function() {
+		return [
+			{
+				elem: 'clearfix',
+				mix: { block: 'clearfix' },
+				content: this.ctx.content
+			}
+		];
+	})
+)

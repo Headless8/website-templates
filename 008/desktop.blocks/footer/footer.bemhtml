@@ -1,0 +1,14 @@
+block('footer')(
+	tag()('footer'),
+	
+	content()(function() {
+		return [
+			{
+				elem: 'layer',
+				mix: { block: 'layer' },
+				content: this.ctx.content
+			}
+		]
+	})
+
+)

@@ -1,0 +1,15 @@
+block('header')(
+
+	tag()('header'),
+
+	content()(function() {
+		return [
+			{
+				elem: 'layer',
+				mix: [ { block: 'layer' }, { block: 'clearfix' } ],
+				content: this.ctx.content
+			}
+		]
+	})
+
+)

@@ -1,0 +1,13 @@
+block('project').elem('architect')(
+	content()(function() {
+		return [
+			{
+				elem: 'tag',
+				mix: { block: 'text' },
+				content: 'Architect: '
+			},
+			this.ctx.content
+		];
+	})
+
+)

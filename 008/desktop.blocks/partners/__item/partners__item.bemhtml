@@ -1,0 +1,1 @@
+block('partners').elem('item').tag()('li')

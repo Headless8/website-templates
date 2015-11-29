@@ -1,0 +1,13 @@
+block('project').elem('client')(
+	content()(function() {
+		return [
+			{
+				elem: 'tag',
+				mix: { block: 'text' },
+				content: 'Client: '
+			},
+			this.ctx.content
+		];
+	})
+
+)

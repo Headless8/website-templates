@@ -1,0 +1,7 @@
+block('contacts').elem('email').content()(
+	function() {
+		return [
+			'e. ', this.ctx.content
+		]
+	}
+)
