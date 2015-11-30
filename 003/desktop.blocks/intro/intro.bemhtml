@@ -1,0 +1,15 @@
+/*block('intro').content()(function() {
+	return [
+		this.ctx.content,
+		{
+			elem: 'after',
+			content: [
+				{
+					block: 'image',
+					mix: {  },
+					url: '../../img/intro-mask.png'
+				}
+			]
+		}
+	]
+})*/

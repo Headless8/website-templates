@@ -1,0 +1,1 @@
+block('copyright').elem('text').tag()('span')

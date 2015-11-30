@@ -1,0 +1,4 @@
+block('popup').elem('form')(
+	tag()('form'),
+	attrs()({ method: 'post', action: '#' })
+)

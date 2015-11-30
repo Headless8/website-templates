@@ -1,0 +1,6 @@
+block('page').content()(function() {
+	return {
+		block: 'layout',
+		content: this.ctx.content
+	}
+});
