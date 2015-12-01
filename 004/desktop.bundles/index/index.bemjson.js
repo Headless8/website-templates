@@ -38,50 +38,52 @@ module.exports = {
 					]
 				},
 				{
-					block: 'button',
-					mix: { block: 'header', elem: 'menu-button' },
-					mods: { type: 'link', side: 'right' },
-					icon: {
-						block: 'icon',
-						mods: { type: 'menu' }
-					}
-				},
-				{
-					block: 'info',
+					elem: 'section',
+					mods: { bg: 'blue' },
 					content: [
 						{
-							block: 'avatar',
-							mix: { block: 'info', elem: 'avatar' },
-							content: [
-								{
-									block: 'image',
-									url: ''
-								}
-							]
-						},
-						{
-							elem: 'title',
-							mix: { block: 'text' },
-							content: 'Free portfolio psd template for graphic designers'
-						},
-						{
-							elem: 'description',
-							mix: { block: 'text' },
-							content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'
-						},
-						{
-							block: 'button',
-							mods: { type: 'link' },
-							mix: { block: 'info', elem: 'action' },
-							text: 'Hire me',
+							block: 'link',
+							mix: { block: 'header', elem: 'menu-button' },
 							url: ''
 						},
 						{
-							elem: 'pointer',
+							block: 'info',
 							content: [
 								{
-									block: 'image',
-									url: '/img/info/__pointer/info__pointer.png'
+									block: 'avatar',
+									mix: { block: 'info', elem: 'avatar' },
+									content: [
+										{
+											block: 'image',
+											url: ''
+										}
+									]
+								},
+								{
+									elem: 'title',
+									mix: { block: 'text' },
+									content: 'Free portfolio psd template for graphic designers'
+								},
+								{
+									elem: 'description',
+									mix: { block: 'text' },
+									content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'
+								},
+								{
+									block: 'button',
+									mods: { type: 'link' },
+									mix: { block: 'info', elem: 'action' },
+									text: 'Hire me',
+									url: ''
+								},
+								{
+									elem: 'pointer',
+									content: [
+										{
+											block: 'image',
+											url: '/img/info/__pointer/info__pointer.png'
+										}
+									]
 								}
 							]
 						}
@@ -253,16 +255,21 @@ module.exports = {
 					block: 'action',
 					content: [
 						{
-							block: 'text',
-							mix: { block: 'action', elem: 'promo' },
+							elem: 'promo',
+							mix: { block: 'text' },
 							content: 'Need a graphic designer?'
+						},
+						{
+							elem: 'call',
+							mix: { block: 'text' },
+							content: 'Ready to work!'
 						},
 						{
 							block: 'button',
 							mix: { block: 'action', elem: 'button' },
 							mods: { type: 'link' },
-							url: '/',
-							text: ''
+							url: '',
+							text: 'Hire me'
 						}
 					]
 				}

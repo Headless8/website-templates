@@ -1,0 +1,11 @@
+block('header').elem('section').content()(
+	function() {
+		return [
+			{
+				elem: 'layer',
+				mix: { block: 'layer' },
+				content: this.ctx.content
+			}
+		];
+	}
+)
