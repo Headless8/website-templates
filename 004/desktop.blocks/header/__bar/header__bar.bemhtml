@@ -1,0 +1,8 @@
+block('header').elem('bar').content()(function() {
+	return [
+		{
+			block: 'layer',
+			content: this.ctx.content
+		}
+	]
+})

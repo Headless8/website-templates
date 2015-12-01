@@ -4,7 +4,7 @@ module.exports = {
 	favicon : '/favicon.ico',
 	head : [
 		{ elem : 'meta', attrs : { name : 'description', content : '' } },
-		{ elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
+		// { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
 		{ elem : 'css', url : 'index.min.css' }
 	],
 	scripts: [{ elem : 'js', url : 'index.min.js' }],
@@ -31,7 +31,7 @@ module.exports = {
 									mods: { type: 'link' },
 									mix: { block: 'cookies', elem: 'action' },
 									text: 'Accept',
-									url: '/'
+									url: ''
 								}
 							]
 						}
@@ -50,18 +50,23 @@ module.exports = {
 					block: 'info',
 					content: [
 						{
-							block: 'image',
+							block: 'avatar',
 							mix: { block: 'info', elem: 'avatar' },
-							url: ''
+							content: [
+								{
+									block: 'image',
+									url: ''
+								}
+							]
 						},
 						{
-							block: 'text',
-							mix: { block: 'info', elem: 'title' },
+							elem: 'title',
+							mix: { block: 'text' },
 							content: 'Free portfolio psd template for graphic designers'
 						},
 						{
-							block: 'text',
-							mix: { block: 'info', elem: 'description' },
+							elem: 'description',
+							mix: { block: 'text' },
 							content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'
 						},
 						{
@@ -69,7 +74,16 @@ module.exports = {
 							mods: { type: 'link' },
 							mix: { block: 'info', elem: 'action' },
 							text: 'Hire me',
-							url: '/'
+							url: ''
+						},
+						{
+							elem: 'pointer',
+							content: [
+								{
+									block: 'image',
+									url: '/img/info/__pointer/info__pointer.png'
+								}
+							]
 						}
 					]
 				}
@@ -85,13 +99,13 @@ module.exports = {
 							block: 'about',
 							content: [
 								{
-									block: 'text',
-									mix: { block: 'section', elem: 'title' },
+									elem: 'title',
+									mix: [ { block: 'text', mods: { type: 'title' } } ],
 									content: 'About me'
 								},
 								{
-									block: 'text',
-									mix: { block: 'section', elem: 'content' },
+									elem: 'description',
+									mix: { block: 'text', mods: { type: 'content' } },
 									content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia'
 								}
 							]
@@ -100,139 +114,54 @@ module.exports = {
 				},
 				{
 					elem: 'section',
+					elemMods: { bg: 'lightblue' },
 					content: [
 						{
 							block: 'skills',
 							content: [
 								{
-									block: 'text',
-									mix: { block: 'section', elem: 'title' },
+									elem: 'title',
+									mix: [ { block: 'text', mods: { type: 'title' } } ],
 									content: 'Expert in'
 								},
 								{
 									elem: 'list',
 									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'skills', elem: 'image' },
-													url: ''
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'name' },
-													content: 'Mobile app design'
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'description'},
-													content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'skills', elem: 'image' },
-													url: ''
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'name' },
-													content: 'Web design'
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'description'},
-													content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'skills', elem: 'image' },
-													url: ''
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'name' },
-													content: 'Web development'
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'description'},
-													content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'skills', elem: 'image' },
-													url: ''
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'name' },
-													content: 'Product design'
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'description'},
-													content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'skills', elem: 'image' },
-													url: ''
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'name' },
-													content: 'UX & UI'
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'description'},
-													content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'skills', elem: 'image' },
-													url: ''
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'name' },
-													content: 'Animations'
-												},
-												{
-													block: 'text',
-													mix: { block: 'skills', elem: 'description'},
-													content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
-												}
-											]
-										}
-									]
+										{ name: 'Mobile app design', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim', url: '/img/skills/__image/_job/skills__image_job_mobile.png' },
+										{ name: 'Web design', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', url: '/img/skills/__image/_job/skills__image_job_webdesign.png' },
+										{ name: 'Web development', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim', url: '/img/skills/__image/_job/skills__image_job_webdev.png' },
+										{ name: 'Product design', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim', url: '/img/skills/__image/_job/skills__image_job_product.png' },
+										{ name: 'UX & UI', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', url: '/img/skills/__image/_job/skills__image_job_uxui.png' },
+										{ name: 'Animations', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim', url: '/img/skills/__image/_job/skills__image_job_anim.png' },
+									].map(function(item) {
+										return [
+											{
+												elem: 'item',
+												content: [
+													{
+														elem: 'wrap',
+														content: [
+															{
+																block: 'image',
+																mix: { block: 'skills', elem: 'image' },
+																url: item.url
+															}
+														]
+													},
+													{
+														elem: 'name',
+														mix: { block: 'text' },
+														content: item.name
+													},
+													{
+														elem: 'description',
+														mix: { block: 'text', mods: { type: 'content' } },
+														content: item.description
+													}
+												]
+											}
+										];
+									})
 								}
 							]
 						}
@@ -245,74 +174,33 @@ module.exports = {
 							block: 'latest',
 							content: [
 								{
-									block: 'text',
-									mix: { block: 'section', elem: 'title' },
+									elem: 'title',
+									mix: [{ block: 'text', mods: { type: 'title' } }, { block: 'latest', elem: 'title' } ],
 									content: 'Latest works'
 								},
 								{
 									elem: 'list',
 									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'latest', elem: 'image' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'latest', elem: 'image' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'latest', elem: 'image' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'latest', elem: 'image' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'latest', elem: 'image' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'latest', elem: 'image' },
-													url: ''
-												}
-											]
-										},
-									]
+										{ url: '/img/latest/__image/_num/latest__image_num_1.png' },
+										{ url: '/img/latest/__image/_num/latest__image_num_2.png' },
+										{ url: '/img/latest/__image/_num/latest__image_num_3.png' },
+										{ url: '/img/latest/__image/_num/latest__image_num_4.png' },
+										{ url: '/img/latest/__image/_num/latest__image_num_5.png' },
+										{ url: '/img/latest/__image/_num/latest__image_num_6.png' }
+									].map(function(item) {
+										return [
+											{
+												elem: 'item',
+												content: [
+													{
+														block: 'image',
+														mix: { block: 'latest', elem: 'image' },
+														url: item.url
+													}
+												]
+											}
+										];
+									})
 								}
 							]
 						}
@@ -320,54 +208,37 @@ module.exports = {
 				},
 				{
 					elem: 'section',
+					elemMods: { bg: 'lightblue' },
 					content: [
 						{
 							block: 'clients',
 							content: [
 								{
+									block: 'title',
+									mix: [ { block: 'text', mods: { type: 'title' } }, { block: 'clients', elem: 'title' } ],
+									content: 'Clients'
+								},
+								{
 									elem: 'list',
 									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'clients', elem: 'logo' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'clients', elem: 'logo' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'clients', elem: 'logo' },
-													url: ''
-												}
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													block: 'image',
-													mix: { block: 'clients', elem: 'logo' },
-													url: ''
-												}
-											]
-										}
-									]
+										{ url: '/img/clients/__image/_org/clients__image_org_ms.png' },
+										{ url: '/img/clients/__image/_org/clients__image_org_samsung.png' },
+										{ url: '/img/clients/__image/_org/clients__image_org_ibm.png' },
+										{ url: '/img/clients/__image/_org/clients__image_org_google.png' }
+									].map(function(item) {
+										return [
+											{
+												elem: 'item',
+												content: [
+													{
+														block: 'image',
+														mix: { block: 'clients', elem: 'image' },
+														url: item.url
+													}
+												]
+											}
+										];
+									})
 								}
 							]
 						}
