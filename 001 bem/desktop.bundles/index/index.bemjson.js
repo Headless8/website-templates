@@ -188,7 +188,19 @@
 					content: {
 						block: 'social',
 						mix: { block: 'footer', elem: 'social' },
-						content: ''
+						content: [
+							{
+								elem: 'item',
+								content: [
+									{
+										block: 'button',
+										mix: { block: 'social', elem: 'link' },
+										mods: { type: 'link' },
+										text: ''
+									}
+								]
+							}
+						]
 					}
 				},
 				{
@@ -197,7 +209,19 @@
 					content: {
 						block: 'copyright',
 						mix: { block: 'footer', elem: 'copyright' },
-						content: ''
+						content: [
+							{
+								block: 'text',
+								mix: { block: 'copyright', elem: 'description' },
+								content: 'Дизfйн сайта'
+							},
+							{
+								block: 'button',
+								mix: { block: 'copyright', elem: 'link' },
+								mods: { type: 'link' },
+								text: ''
+							}
+						]
 					}
 				}
 			]
