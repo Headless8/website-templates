@@ -1,6 +1,6 @@
 ({
 	mustDeps: [
-		{ block: 'layer' }
-		{ block: 'clearfix' },
+		{ block: 'layer' },
+		{ block: 'clearfix' }
 	]
 })
