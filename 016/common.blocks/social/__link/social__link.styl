@@ -1,0 +1,39 @@
+.social__link
+	position relative
+	overflow hidden
+
+	display block
+	width 3.75em
+	height 3.75em
+	border 1px solid #c8cccf
+	border-radius 100%
+	
+	text-decoration none
+	line-height 3.75em
+	text-align center
+	text-indent 3.75em
+	white-space nowrap
+
+	&:hover
+		border-color #ff7496
+		
+		&::before
+			text-shadow 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496
+		
+	&::before
+		position absolute
+		top 0
+		left 0
+		
+		width inherit
+		height inherit
+
+		font-size 1.85rem
+		font-family 'FontAwesome'
+		font-style normal
+		font-weight normal
+		text-transform none
+		text-indent 0
+		
+		color #ffffff
+		text-shadow 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf

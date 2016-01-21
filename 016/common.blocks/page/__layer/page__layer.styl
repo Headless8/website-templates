@@ -1,0 +1,19 @@
+.page__layer
+	display flex
+	align-items center
+	justify-content space-between
+	flex-direction column
+	perspective 1000px
+
+	position relative
+	padding 1.5em
+	z-index 2
+	
+	min-height 100%
+	
+	&::before
+		content ''
+		display block
+
+	> *
+		z-index 1

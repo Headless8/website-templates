@@ -1,0 +1,10 @@
+block('page')(
+	content()(function() {
+		return [
+			{
+				elem: 'layer',
+				content: this.ctx.content
+			}
+		];
+	})
+)
