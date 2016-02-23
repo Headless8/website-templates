@@ -1,0 +1,17 @@
+.about__avatar
+	position relative
+	display block
+	
+	&::before
+		content ''
+		position absolute
+		top 50%
+		left -3em
+		right -3em
+		height 1px
+		
+		background-color #ccc
+		
+		@media screen and (max-width: 480px)
+			left -2em
+			right -2em
