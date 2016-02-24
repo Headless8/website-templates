@@ -1,0 +1,22 @@
+.menu__hamburger
+	display block
+	position relative
+	width 4em
+	height 4em
+	
+	&::before
+		content '\f0c9'
+		
+		position absolute
+		top 0
+		left 0
+		width inherit
+		
+		text-align center
+		font-family 'FontAwesome'
+		color #aaa
+		transition color 0.2s ease
+	
+	&:hover
+		&::before
+			color #2ebaae

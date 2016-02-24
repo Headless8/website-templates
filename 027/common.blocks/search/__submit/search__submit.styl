@@ -1,0 +1,27 @@
+.search__submit
+	position relative
+	width 4em
+	height 4em
+	border 0
+	outline 0
+	
+	line-height inherit
+	cursor pointer
+	background-color transparent
+
+	&::before
+		content '\f002'
+		
+		position absolute
+		top 0
+		left 0
+		width inherit
+		
+		text-align center
+		font-family 'FontAwesome'
+		color #aaa
+		transition color 0.2s ease
+		
+	&:hover
+		&::before
+			color #2ebaae
